@@ -1,25 +1,29 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import Home from './pages/Home';
-import AboutPage from './pages/AboutPage';
-import ProjectsPage from './pages/ProjectsPage';
-import ContactPage from './pages/ContactPage';
-import './styles/global.css';
+
+import Home from './Pages/Home';
+import AboutPage from './Pages/AboutPage';
+import ProjectsPage from './Pages/ProjectsPage';
+import ContactPage from './Pages/ContactPage';
 
 function App() {
   return (
-    <div className="app">
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<AboutPage />} />
-        <Route path="/projects" element={<ProjectsPage />} />
-        <Route path="/contact" element={<ContactPage />} />
-      </Routes>
-      <Footer />
-    </div>
+    <Router>
+      <div className="app-container">
+        <Navbar />
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/projects" element={<ProjectsPage />} />
+            <Route path="/contact" element={<ContactPage />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

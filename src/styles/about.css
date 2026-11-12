@@ -1,0 +1,36 @@
+.about-section {
+  padding: 70px 0;
+}
+
+.about-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+  padding: 36px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+}
+
+.about-card p {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  margin-bottom: 18px;
+}
+
+.about-card p:last-child {
+  margin-bottom: 0;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+  .about-section {
+    padding: 50px 0;
+  }
+
+  .about-card {
+    padding: 24px;
+  }
+
+  .about-card p {
+    font-size: 1rem;
+  }
+}

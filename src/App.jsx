@@ -1,5 +1,16 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
+
+
+import './styles/global.css';
+import './styles/navbar.css';
+import './styles/hero.css';
+import './styles/about.css';
+import './styles/skills.css';
+import './styles/projects.css';
+import './styles/contact.css';
+import './styles/footer.css';
+
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
